@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+    background-color: hsl(221, 100%, 96%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.main {
+    width: 600px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 20px -5px #000;
+}
+
+.main .left {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 55%);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.main .left .box h1 {
+    color: hsl(241, 100%, 89%);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.main .left .box .namber {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: hsl(241, 81%, 54%);
+    color: #fff;
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+.main .left .box .namber p {
+    color: hsl(241, 100%, 89%);
+    font-size: 15px;
+}
+
+.main .left .box .scoor h3 {
+    margin: 30px auto;
+    color: #fff;
+    font-size: 25px;
+}
+
+.main .left .box .scoor p {
+    width: 250px;
+    margin: auto;
+    color: hsl(241, 100%, 89%);
+}
+
+.main .right {
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+}
+
+.main .right .box ul {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main .right .box ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 0 20px;
+    background-color: hsl(0, 100%, 67%, 50%);
+    border-radius: 10px;
+}
+
+.main .right .box ul li:nth-child(2) {
+    background-color: hsl(39, 100%, 56%, 50%);
+}
+
+.main .right .box ul li:nth-child(3) {
+    background-color: hsl(166, 100%, 37%, 50%);
+}
+
+.main .right .box ul li:nth-child(4) {
+    background-color: hsl(234, 85%, 45%, 50%);
+}
+
+.main .right .box button {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        font-size: 15px;
+        background-color: #fff;
+    }
+
+    .main {
+        width: 500px;
+    }
+
+    .main .left .box .scoor p {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        font-size: 18px;
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        display: block;
+        box-shadow: none;
+    }
+
+
+    .main .left {
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .main .left .box .namber {
+        width: 150px;
+        height: 150px;
+        font-size: 50px;
+    }
+
+    .main .left .box .namber p {
+        font-size: 10px;
+    }
+
+    .main .left .box .scoor h3 {
+        margin: 10px auto;
+        font-size: 20px;
+    }
+
+    .main .left .box .scoor p {
+        font-size: 15px;
+
+    }
+
+
+    .main .right {
+        width: 100%;
+        height: 55%;
+    }
+
+}
